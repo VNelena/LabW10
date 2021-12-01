@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="style.css"/>
+<div id="main">
+<h1> What was the highest temperature registered today?</h1>
+<button id="MAX"onclick="findMax()">Click here to find out</button>
+<p>The highest temperature was <span id="highest"> </span> Celsius degrees</p>
+
+ </div>
+<script>
+
+function findMax(){
+
+const temp = [10, 7, 12, 5, 4, 6];
+document.getElementById("highest").innerHTML = findArrayMax(temp);
+
+function findArrayMax(max) {
+  return Math.max.apply(null, max);
+}}
+</script>
+
+</body>
+</html>
